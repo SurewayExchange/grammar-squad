@@ -21,6 +21,18 @@ function WorkbookHome() {
         Hindsight is what you can see about the past now. Insight is what that past still does
         inside you. Write a few sentences. Then name three feelings. Those feelings go in the briefcase.
       </p>
+      <figure className="figure">
+        <img
+          src="/art/insight.jpg"
+          alt="Two young people keeping their heads above the water, looking straight ahead."
+        />
+      </figure>
+      <figure className="figure">
+        <img
+          src="/art/path.jpg"
+          alt="A person stands on a wooden dock between cliffs of hanging houses, facing a bright opening across the water."
+        />
+      </figure>
       <p className="warn">
         This writing stays in this browser. Skip any prompt. If you feel unsafe with yourself,
         call or text 988 in the United States.
@@ -129,6 +141,12 @@ function Briefcase() {
       <a className="back" href="#/workbook">Workbook</a>
       <p className="kicker">What you carry</p>
       <h1>The briefcase.</h1>
+      <figure className="figure narrow">
+        <img
+          src="/art/briefcase.png"
+          alt="An open briefcase. Inside is a page that reads kindness, understanding, forgiveness, patient, empathy, remorseful, insightful, truthful, compassionate, honest."
+        />
+      </figure>
       <p>
         You choose what stays in the case. When you answer a present moment with an old hurt, you
         have left the present and opened the case. Face a feeling to lighten it. Pack a tool you
@@ -178,6 +196,12 @@ function Chair() {
       <a className="back" href="#/workbook">Workbook</a>
       <p className="kicker">Change</p>
       <h1>The Chair.</h1>
+      <figure className="figure narrow">
+        <img
+          src="/art/looking-ahead.jpg"
+          alt="A student with a backpack looks up toward the light, standing in front of a bulletin board."
+        />
+      </figure>
       <p>
         The chair means you can tell the truth about the harm you caused. Thought, then feeling,
         then behavior. A caused B, and B caused C. You do not have to wait for a perfect workbook

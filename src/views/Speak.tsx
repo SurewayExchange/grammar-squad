@@ -50,8 +50,21 @@ export function Speak() {
       <h1>Two minutes.</h1>
       <p>
         Stand up if you can. The timekeeper’s hand goes up at one minute, again at thirty seconds,
-        and once more at the end. Peers give useful feedback, never shame.
+        and once more at the end. Peers give useful feedback, never shame. These are the GST topics
+        from the book.
       </p>
+      <figure className="figure narrow">
+        <img
+          src="/art/podium.png"
+          alt="A student stands at a podium that says It’s All Business. The board behind him is marked GST and lists the eight parts of speech."
+        />
+      </figure>
+      <figure className="figure narrow">
+        <img
+          src="/art/topics.png"
+          alt="GST topic list: negative self-talk, negative media, overcoming negative thinking, high stress, negative emotions, misery, depression, negative people, and rumors and gossip."
+        />
+      </figure>
       <label>
         Topic
         <select value={topic} onChange={(event) => setTopic(event.target.value)}>

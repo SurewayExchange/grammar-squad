@@ -18,6 +18,12 @@ function LessonIndex() {
         All language works from these eight. Learn the job of each one, then use it on your own
         life in the workbook.
       </p>
+      <figure className="figure">
+        <img
+          src="/art/in-route.png"
+          alt="A student sits by a chart labeled In route and Outside. In route lists the eight parts of speech. Outside lists period, comma, clauses, comparison, complements, contractions, and etc. The code 2-2-3-1 is at the bottom."
+        />
+      </figure>
       <div className="grid two">
         {PARTS.map((part, index) => (
           <a key={part.id} className="part-card" href={`#/learn/${part.id}`} style={{ textDecoration: "none", color: "inherit" }}>

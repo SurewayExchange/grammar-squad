@@ -504,10 +504,15 @@ export const GLOSSARY: { term: string; meaning: string }[] = [
 ];
 
 export const SPEECH_TOPICS = [
-  "A goal I can name in one sentence",
-  "A person, place, or thing I need to replace",
-  "One behavior I am willing to modify",
-  "A time I asked for the right help",
-  "What “I can” sounds like in my life",
-  "One dot I can connect from childhood to today",
+  "The mental health impact of negative self-talk",
+  "The impact of negative media on young people",
+  "How to overcome negative thinking",
+  "The health risks of high stress",
+  "The adverse effects of negative emotions",
+  "Ways to avoid misery and negative thinking",
+  "The relationship between depression and negative thinking",
+  "How to handle negative people",
+  "The effects of negative rumors and gossip",
 ];
+
+export const BOOK_PAGES = 79;

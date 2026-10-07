@@ -17,6 +17,12 @@ function PracticeHome() {
       <p className="kicker">Practice</p>
       <h1>Make the eight stick.</h1>
       <p className="lede">Three drills. Short. You can repeat them until the code is yours.</p>
+      <figure className="figure narrow">
+        <img
+          src="/art/code-chart.png"
+          alt="The 2-2-3-1 chart. Two naming words, two modifying words, three PIC words, and one verb."
+        />
+      </figure>
       <div className="grid three">
         <a className="card-link" href="#/practice/sort">
           <small>{state.sorted ? "Cleared" : "Drill"}</small>

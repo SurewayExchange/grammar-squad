@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useSquad } from "./storage";
 import { progressScore } from "./progress";
+import { About } from "./views/About";
+import { Book } from "./views/Book";
 import { Glossary } from "./views/Glossary";
 import { Home } from "./views/Home";
 import { Learn } from "./views/Learn";
@@ -25,6 +27,8 @@ export function App() {
   const page = route.replace(/^#\/?/, "").split("/")[0] || "home";
 
   let view = <Home />;
+  if (page === "book") view = <Book route={route} />;
+  if (page === "about") view = <About />;
   if (page === "learn") view = <Learn route={route} />;
   if (page === "practice") view = <Practice route={route} />;
   if (page === "workbook") view = <Workbook route={route} />;
@@ -38,7 +42,7 @@ export function App() {
           <span className="seal">2·2·3·1</span>
           <span>
             <strong>Grammar Squad</strong>
-            <span>Eight parts. One change.</span>
+            <span>Therapeutics</span>
           </span>
         </a>
         <div className="progress-pill" aria-label={`Progress ${score.percent} percent`}>
@@ -46,13 +50,24 @@ export function App() {
         </div>
       </header>
       <main>{view}</main>
-      <nav className="nav" aria-label="Primary">
-        <a href="#/" aria-current={page === "home" ? "page" : undefined}>Home</a>
-        <a href="#/learn" aria-current={page === "learn" ? "page" : undefined}>Learn</a>
-        <a href="#/practice" aria-current={page === "practice" ? "page" : undefined}>Practice</a>
-        <a href="#/workbook" aria-current={page === "workbook" ? "page" : undefined}>Workbook</a>
-        <a href="#/speak" aria-current={page === "speak" ? "page" : undefined}>Speak</a>
-      </nav>
+      <div className="dock">
+        <footer className="site-credit">
+          <a href="https://www.fakelit.com" target="_blank" rel="noopener noreferrer">
+            Powered by Fakelit.com
+          </a>
+          <span>
+            The first website, app, and game development platform all in one. Publish apps to Google Play and the App Store.
+          </span>
+        </footer>
+        <nav className="nav" aria-label="Primary">
+          <a href="#/" aria-current={page === "home" ? "page" : undefined}>Home</a>
+          <a href="#/book" aria-current={page === "book" ? "page" : undefined}>Book</a>
+          <a href="#/learn" aria-current={page === "learn" ? "page" : undefined}>Learn</a>
+          <a href="#/practice" aria-current={page === "practice" ? "page" : undefined}>Practice</a>
+          <a href="#/workbook" aria-current={page === "workbook" ? "page" : undefined}>Workbook</a>
+          <a href="#/speak" aria-current={page === "speak" ? "page" : undefined}>Speak</a>
+        </nav>
+      </div>
     </div>
   );
 }
