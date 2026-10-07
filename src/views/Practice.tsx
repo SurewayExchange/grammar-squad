@@ -65,6 +65,12 @@ function SortGame() {
     <div className="stack">
       <a className="back" href="#/practice">All practice</a>
       <h1>Sort the code.</h1>
+      <figure className="figure companion">
+        <img
+          src="/art/in-route.png"
+          alt="A student sits beside a parchment chart that groups the eight parts of speech under the code 2-2-3-1."
+        />
+      </figure>
       <p>Tap a part, then tap the group it belongs in.</p>
       <div className="row" aria-label="Parts still to sort">
         {remaining.map((part) => (
@@ -161,6 +167,12 @@ function LabelGame() {
     <div className="stack">
       <a className="back" href="#/practice">All practice</a>
       <h1>Label the sentence.</h1>
+      <figure className="figure companion">
+        <img
+          src="/art/looking-ahead.jpg"
+          alt="A student with a backpack looks up at a classroom bulletin board covered with papers."
+        />
+      </figure>
       <p className="muted">
         Sentence {index + 1} of {SENTENCES.length}
         {state.labeled.includes(sentence.id) ? " · cleared" : ""}
@@ -229,6 +241,12 @@ function Quiz() {
     return (
       <div className="stack">
         <h1>Quiz complete.</h1>
+        <figure className="figure companion">
+          <img
+            src="/art/podium.png"
+            alt="A student stands at a podium that reads It’s All Business, beside a GST list of the eight parts of speech."
+          />
+        </figure>
         <p className="lede">You scored {correctCount} out of {QUIZ.length}. Best saved: {Math.max(state.quizBest, correctCount)}.</p>
         <button
           className="btn"
@@ -250,6 +268,12 @@ function Quiz() {
     <div className="stack">
       <a className="back" href="#/practice">All practice</a>
       <p className="kicker">Question {step + 1} of {QUIZ.length}</p>
+      <figure className="figure companion">
+        <img
+          src="/art/podium.png"
+          alt="A student stands at a podium that reads It’s All Business, beside a GST list of the eight parts of speech."
+        />
+      </figure>
       <h1>{item.question}</h1>
       {item.choices.map((choice, index) => {
         let className = "choice";

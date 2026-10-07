@@ -4,8 +4,8 @@
   "description": "Change your thinking and behavior through the eight parts of speech.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f3eee4",
-  "theme_color": "#1e4a38",
+  "background_color": "#fff3e0",
+  "theme_color": "#b03e22",
   "icons": [
     {
       "src": "/favicon.svg",

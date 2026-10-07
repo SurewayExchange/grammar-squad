@@ -89,6 +89,12 @@ function ThemePage({ theme }: { theme: string }) {
       <a className="back" href="#/workbook">All themes</a>
       <p className="kicker">Hindsight</p>
       <h1>{theme}</h1>
+      <figure className="figure">
+        <img
+          src="/art/path.jpg"
+          alt="A person stands on a wooden dock, looking across the water toward a bright opening between hanging houses."
+        />
+      </figure>
       <p>
         Using the eight parts of speech, describe a time you experienced this as a child, as far
         back as you can remember. A noun, a verb, and a predicate are enough to begin.

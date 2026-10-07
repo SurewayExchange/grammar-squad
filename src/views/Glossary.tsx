@@ -14,6 +14,12 @@ export function Glossary() {
     <div>
       <a className="back" href="#/">Home</a>
       <h1>Glossary</h1>
+      <figure className="figure narrow">
+        <img
+          src="/art/memory.jpg"
+          alt="The word Insightful above two students walking through a doorway. In loving memory of Jannie Mae Davis."
+        />
+      </figure>
       <label className="search">
         Search
         <input value={query} onChange={(event) => setQuery(event.target.value)} type="text" placeholder="hindsight, chair, trigger" />

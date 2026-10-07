@@ -8,29 +8,31 @@ export function Home() {
 
   return (
     <>
-      <section className="hero">
+      <section className="cover-hero">
         <figure className="figure cover-frame">
           <img
             src="/art/cover.jpg"
-            alt="Cover of Grammar Squad Therapeutics. Students with backpacks walk toward a school at sunrise. Written by Jessie Calvin Lee and Larry Davis."
+            alt="Cover of Grammar Squad Therapeutics. Students with backpacks walk toward a brick school at sunrise. Written by Jessie Calvin Lee and Larry Davis."
           />
         </figure>
-        <div className="stack">
-          <div className="panel">
-            <p className="kicker">Jessie Calvin Lee & Larry Davis</p>
-            <h1>Change your thinking and your behavior.</h1>
+        <div className="after-cover">
+          <div className="panel title-sheet">
+            <p className="book-series">Grammar Squad Therapeutics</p>
+            <h1>How to Change Your Thinking & Behavior</h1>
+            <p className="book-subtitle">Through the Eight Parts of Speech</p>
+            <p className="byline">Jessie Calvin Lee & Larry Davis</p>
             <p className="lede">
-              Grammar Squad Therapeutics is a self-help path built on the eight parts of speech.
-              You learn to name a thing, replace it, modify it, and then do the next right action.
+              A self-help path built on the eight parts of speech. You learn to name a thing,
+              replace it, modify it, and then do the next right action.
             </p>
-            <p className="byline">Knowledge can replace “I can’t” with “I can.”</p>
+            <p>Knowledge can replace “I can’t” with “I can.”</p>
             <div className="actions">
               <a className="btn" href="#/book">Open the book</a>
               <a className="btn secondary" href="#/learn">Start with the eight</a>
             </div>
           </div>
           <aside className="ritual">
-            <p className="kicker" style={{ color: "#e7d7a8" }}>Before you speak</p>
+            <p className="kicker">Before you speak</p>
             <p className="line">It’s all business.</p>
             <p>
               Say it so the room knows you are here to be real. No shame games. No put-downs.

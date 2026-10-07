@@ -38,8 +38,8 @@ export function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <a className="brand" href="#/">
-          <span className="seal">2·2·3·1</span>
+        <a className="brand" href="#/" aria-label="Grammar Squad Therapeutics, home">
+          <span className="seal" aria-hidden="true"><span>2·2</span><span>3·1</span></span>
           <span>
             <strong>Grammar Squad</strong>
             <span>Therapeutics</span>

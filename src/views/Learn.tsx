@@ -53,6 +53,12 @@ function Lesson({ id }: { id: PartId }) {
       <a className="back" href="#/learn">All eight parts</a>
       <p className="kicker">Part {index + 1} of 8</p>
       <h1>{part.name}</h1>
+      <figure className="figure narrow">
+        <img
+          src="/art/code-chart.png"
+          alt="A teacher points to the 2-2-3-1 parchment chart of the eight parts of speech."
+        />
+      </figure>
       <p className="lede">{part.definition}</p>
       <div className="actions">
         <button className="btn secondary" type="button" onClick={() => speak(`${part.name}. ${part.definition} ${part.example}`)}>
@@ -115,6 +121,6 @@ function Lesson({ id }: { id: PartId }) {
 }
 
 function swatch(index: number) {
-  const colors = ["#1e4a38", "#8d6b2f", "#8a3b32", "#245c78", "#3f4a34", "#6a4a78", "#8a5a2b", "#1f3d4d"];
+  const colors = ["#b03e22", "#e8a317", "#2f6f9f", "#d4653a", "#c48a52", "#1d5c86", "#8f3018", "#f0b429"];
   return colors[index % colors.length];
 }
